@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'oytun_music.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'oytun_music',
+        'USER': 'oytun_music',
+        'PASSWORD': 'oytun_music',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
