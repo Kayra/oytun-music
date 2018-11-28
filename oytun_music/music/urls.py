@@ -1,9 +1,10 @@
 from django.urls import path
 
-from oytun_music import views
+from . import views
+
 
 app_name = 'music'
 
-# url_patterns = [
-#     path('', )
-# ]
+urlpatterns = [
+    path('', views.index, name='index'),
+]
