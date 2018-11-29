@@ -1,1 +1,33 @@
-{{ site_title }}
+<html>
+
+<head>
+    <title>{{ site_title }}</title>
+</head>
+
+<body>
+
+
+    <h1>{{ site_title }}</h1>
+    <h2>{{ about_me }}</h2>
+
+    <h3>Songs</h3>
+
+    <ol>
+        {% for song in songs_to_display %}
+            <li>{{ song.title }}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>Performances</h3>
+
+    <ol>
+        {% for performance in performances_to_display %}
+        <li><a href="{{ performance.external_link }}" >{{ performance.venue_name }}</a></li>
+        {{}}
+        {% endfor %}
+    </ol>
+
+
+</body>
+
+</html>
