@@ -13,8 +13,8 @@ def index(request):
     template_context = {
         'site_title': site_details.title,
         'about_me': site_details.about_me,
-        'last_five_songs': songs_to_display,
-        'last_five_performances': performances_to_display
+        'songs_to_display': songs_to_display,
+        'performances_to_display': performances_to_display
     }
 
     return render(request, index_template, template_context)
