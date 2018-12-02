@@ -1,9 +1,36 @@
 
-h1 {
-    font-size: 5em;
-    font-family: 'Cardo', serif;
+body {
+    background-image: url('clouds.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #1C282F;
+    color: white;
 }
 
-#widget {
-    border: 0;
+header {
+    margin: 5em 0 6em 0;
+}
+
+h1 {
+    font-size: 10em;
+    font-family: 'Cardo', serif;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+ol {
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.songs {
+    font-size: 2em;
 }
