@@ -33,7 +33,7 @@
                     <ol>
                         {% for song in songs_to_display %}
                         <li>{{ song.title }}</li>
-                        {% static 'music/music-player.html' %}
+                        {% include "music/music-player.html" with song_url=song.url only %}
                         {% endfor %}
                     </ol>
 
@@ -45,7 +45,10 @@
 
                     <ol>
                         {% for performance in performances_to_display %}
-                        <li><a href="{{ performance.external_link }}" target="_blank" >{{ performance.venue_name }}</a></li>
+                        <li>
+                            <p>{{ performance.start_time|date:'l jS F Y'}}</p>
+                            <a href="{{ performance.external_link }}" target="_blank" >{{ performance.venue_name }}</a>
+                        </li>
                         {% endfor %}
                     </ol>
 
