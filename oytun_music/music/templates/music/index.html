@@ -32,8 +32,8 @@
 
                     <ol>
                         {% for song in songs_to_display %}
-                        <li>{{ song.title }}</li>
-                        {% include "music/music-player.html" with song_url=song.url only %}
+                            <li>{{ song.title }}</li>
+                            {% include "music/music-player.html" with song_url=song.song_file.url only %}
                         {% endfor %}
                     </ol>
 
