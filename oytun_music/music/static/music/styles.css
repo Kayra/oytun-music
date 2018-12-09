@@ -1,36 +1,52 @@
 
-body {
-    background-image: url('clouds.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: #1C282F;
-    color: white;
+@media (min-width: 0px) {
+
+    body {
+        background-image: url('clouds.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: #1C282F;
+        color: white;
+    }
+
+    header {
+        margin: 5em 0 6em 0;
+    }
+
+    h1 {
+        font-size: 10em;
+        font-family: 'Cardo', serif;
+        text-align: center;
+        letter-spacing: 0.05em;
+    }
+
+    ol {
+        list-style-type: none;
+    }
+
+    li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+    .songs {
+        font-size: 2em;
+    }
+
 }
 
-header {
-    margin: 5em 0 6em 0;
+@media (min-width: 767px) {
+
 }
 
-h1 {
-    font-size: 10em;
-    font-family: 'Cardo', serif;
-    text-align: center;
-    letter-spacing: 0.05em;
+@media (min-width: 991px) {
+
 }
 
-ol {
-    list-style-type: none;
-}
+@media (min-width: 1199px) {
 
-li a {
-    color: white;
-    text-decoration: none;
-}
-
-li a:hover {
-    text-decoration: underline;
-}
-
-.songs {
-    font-size: 2em;
 }
