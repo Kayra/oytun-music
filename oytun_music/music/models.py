@@ -15,7 +15,7 @@ class Site(models.Model):
 class Song(models.Model):
 
     title = models.CharField(max_length=200)
-    external_link = models.CharField(max_length=200)
+    song_file = models.FileField(upload_to='uploads/')
     display_order = models.IntegerField(null=True, blank=True)
 
     def __str__(self):
