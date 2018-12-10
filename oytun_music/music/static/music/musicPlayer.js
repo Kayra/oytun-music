@@ -6,7 +6,7 @@ var progress = audioPlayer.querySelector('.progress');
 var sliders = audioPlayer.querySelectorAll('.slider');
 var volumeBtn = audioPlayer.querySelector('.volume-btn');
 var volumeControls = audioPlayer.querySelector('.volume-controls');
-var volumeProgress = volumeControls.querySelector('.slider .progress');
+// var volumeProgress = volumeControls.querySelector('.slider .progress');
 var player = audioPlayer.querySelector('audio');
 var currentTime = audioPlayer.querySelector('.current-time');
 var totalTime = audioPlayer.querySelector('.total-time');
@@ -45,16 +45,16 @@ player.addEventListener('ended', function(){
 volumeBtn.addEventListener('click', () => {
     volumeBtn.classList.toggle('open');
     volumeControls.classList.toggle('hidden');
-})
+});
 
-window.addEventListener('resize', directionAware);
+// window.addEventListener('resize', directionAware);
 
 sliders.forEach(slider => {
     let pin = slider.querySelector('.pin');
     slider.addEventListener('click', window[pin.dataset.method]);
 });
 
-directionAware();
+// directionAware();
 
 function isDraggable(el) {
     let canDrag = false;
@@ -166,15 +166,15 @@ function makePlay() {
     loading.style.display = 'none';
 }
 
-function directionAware() {
-    if(window.innerHeight < 250) {
-        volumeControls.style.bottom = '-54px';
-        volumeControls.style.left = '54px';
-    } else if(audioPlayer.offsetTop < 154) {
-        volumeControls.style.bottom = '-164px';
-        volumeControls.style.left = '-3px';
-    } else {
-        volumeControls.style.bottom = '52px';
-        volumeControls.style.left = '-3px';
-    }
-}
+// function directionAware() {
+//     if(window.innerHeight < 250) {
+//         volumeControls.style.bottom = '-54px';
+//         volumeControls.style.left = '54px';
+//     } else if(audioPlayer.offsetTop < 154) {
+//         volumeControls.style.bottom = '-164px';
+//         volumeControls.style.left = '-3px';
+//     } else {
+//         volumeControls.style.bottom = '52px';
+//         volumeControls.style.left = '-3px';
+//     }
+// }
