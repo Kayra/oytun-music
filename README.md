@@ -29,13 +29,13 @@ The site will be available at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
 The admin panel of the site will be available at [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin) and can be accessible with the following credentials:
 
-* Username = test
-* Password = test
+* Username = `test`
+* Password = `test`
 
 The psql database is named `oytun_music` and will be accessible with the following credentials:
 
-* Username = oytun_music
-* Password = development_password_only
+* Username = `oytun_music`
+* Password = `development_password_only`
 
 ## Useful commands
 
@@ -54,4 +54,4 @@ python oytun_music/manage.py sqlmigrate music 0001
 
 ## Todo
 
-Change how static and media files are handled for [production](https://docs.djangoproject.com/en/2.1/howto/static-files/)
+Change how static and media files are handled for [production](https://docs.djangoproject.com/en/2.1/howto/static-files/), [here too](https://timmyomahony.com/blog/static-vs-media-and-root-vs-path-in-django/)
