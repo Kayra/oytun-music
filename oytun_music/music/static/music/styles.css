@@ -22,6 +22,7 @@
 
     ol {
         list-style-type: none;
+        padding-inline-start: 0;
     }
 
     li a {
@@ -36,6 +37,8 @@
     .songs {
         font-size: 2em;
     }
+
+}
 
 }
 
