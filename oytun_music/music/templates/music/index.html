@@ -40,13 +40,16 @@
 
                 <div class="performances">
 
-                    <h3>Performances</h3>
+                    <!--<h3>Performances</h3>-->
+
+                    <br>
 
                     <ol>
                         {% for performance in performances_to_display %}
                         <li>
-                            <p>{{ performance.start_time|date:'l jS F Y'}}</p>
-                            <a href="{{ performance.external_link }}" target="_blank" >{{ performance.venue_name }}</a>
+                            <h2><a href="{{ performance.external_link }}" target="_blank" >{{ performance.venue_name }}</a></h2>
+                            <p class="start-time">{{ performance.start_time|date:'l jS F Y'}}</p>
+                            <p>{{ performance.venue_address }}</p>
                         </li>
                         {% endfor %}
                     </ol>

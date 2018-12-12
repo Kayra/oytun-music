@@ -1,11 +1,11 @@
-var audioPlayer = document.querySelector('.green-audio-player');
+var audioPlayer = document.querySelector('.audio-player');
 var playPause = audioPlayer.querySelector('#playPause');
 var playpauseBtn = audioPlayer.querySelector('.play-pause-btn');
 var loading = audioPlayer.querySelector('.loading');
 var progress = audioPlayer.querySelector('.progress');
 var sliders = audioPlayer.querySelectorAll('.slider');
-var volumeBtn = audioPlayer.querySelector('.volume-btn');
-var volumeControls = audioPlayer.querySelector('.volume-controls');
+// var volumeBtn = audioPlayer.querySelector('.volume-btn');
+// var volumeControls = audioPlayer.querySelector('.volume-controls');
 // var volumeProgress = volumeControls.querySelector('.slider .progress');
 var player = audioPlayer.querySelector('audio');
 var currentTime = audioPlayer.querySelector('.current-time');
@@ -42,10 +42,10 @@ player.addEventListener('ended', function(){
     player.currentTime = 0;
 });
 
-volumeBtn.addEventListener('click', () => {
-    volumeBtn.classList.toggle('open');
-    volumeControls.classList.toggle('hidden');
-});
+// volumeBtn.addEventListener('click', () => {
+//     volumeBtn.classList.toggle('open');
+//     volumeControls.classList.toggle('hidden');
+// });
 
 // window.addEventListener('resize', directionAware);
 
@@ -133,17 +133,17 @@ function getCoefficient(event) {
     return K;
 }
 
-function rewind(event) {
-    if(inRange(event)) {
-        player.currentTime = player.duration * getCoefficient(event);
-    }
-}
-
-function changeVolume(event) {
-    if(inRange(event)) {
-        player.volume = getCoefficient(event);
-    }
-}
+// function rewind(event) {
+//     if(inRange(event)) {
+//         player.currentTime = player.duration * getCoefficient(event);
+//     }
+// }
+//
+// function changeVolume(event) {
+//     if(inRange(event)) {
+//         player.volume = getCoefficient(event);
+//     }
+// }
 
 function formatTime(time) {
     var min = Math.floor(time / 60);

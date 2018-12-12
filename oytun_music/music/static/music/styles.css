@@ -34,11 +34,46 @@
         text-decoration: underline;
     }
 
+    .song-title {
+        font-size: 0.6em;
+        margin-bottom: 0.7em;
+    }
+
     .songs {
         font-size: 2em;
     }
 
-}
+    .controls {
+        display: flex;
+        align-items: center;
+    }
+
+    .play-pause-btn {
+        margin: 0 10px;
+        display: block;
+    }
+
+    .slider {
+        width: 100%;
+        position: relative;
+        margin-right: 10px;
+    }
+
+    .progress {
+        position: relative;
+        z-index: 2;
+    }
+
+    .slider:after {
+        content: "";
+        background-color: #566574;
+        height: 1rem;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        border-radius: 0.25rem;
+    }
 
 }
 

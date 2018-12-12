@@ -1,11 +1,15 @@
 {% block content %}
-<div class="audio green-audio-player">
+<div class="audio audio-player">
+
     <div class="loading">
         <div class="spinner"></div>
     </div>
 
-    <div class="controls">
+    <div class="song-title">
         {{ song_title }} <span class="float-right" ><span class="current-time">0:00</span> - <span class="total-time">0:00</span></span>
+    </div>
+
+    <div class="controls">
 
         <div class="play-pause-btn">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
@@ -18,6 +22,7 @@
                 <div class="pin" id="progress-pin" data-method="rewind"></div>
             </div>
         </div>
+
     </div>
 
     <!--<div class="volume">-->
@@ -31,5 +36,6 @@
     <audio crossorigin>
         <source src="{{ song_url }}" type="audio/mpeg">
     </audio>
+
 </div>
 {% endblock %}
