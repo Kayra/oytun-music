@@ -10,6 +10,6 @@ INSERT INTO music_performance (venue_name, venue_address, start_time, external_l
   ('2 Pigs', 'Church St, Cheltenham GL50 3HA', (NOW() + interval '3 week'), 'http://2pigs.co.uk', 3);
 
 INSERT INTO music_song (title, external_link, display_order) VALUES
-  ('Song one', 'nothing.com', 1),
-  ('Song two', 'nothing.com', 2),
-  ('Song three', 'nothing.com', 3);
+  ('Condor Ave', 'uploads/Condor_Ave.mp3', 1),
+  ('A Good Man Is Hard To Find', 'uploads/A_Good_Man_Is_Hard_To_Find.mp3', 2),
+  ('Happy Birthday', 'uploads/Happy_Birthday.mp3', 3);
