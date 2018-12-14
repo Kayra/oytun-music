@@ -4,7 +4,7 @@
     body {
         background-image: url('clouds.jpg');
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 250%;
         background-color: #1C282F;
         color: white;
     }
@@ -34,6 +34,18 @@
         text-decoration: underline;
     }
 
+    .performances {
+        text-align: center;
+    }
+    
+    .performances p {
+       margin: 0;
+    }
+
+    .performances li {
+        margin: 2em 0;
+    }
+
     .song-title {
         font-size: 0.6em;
         margin-bottom: 0.7em;
@@ -56,7 +68,7 @@
     .slider {
         width: 100%;
         position: relative;
-        margin-right: 10px;
+        margin: 0 10px;
     }
 
     .progress {
