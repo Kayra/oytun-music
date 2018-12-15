@@ -35,15 +35,24 @@
     }
 
     .performances {
-        text-align: center;
+        margin-bottom: 2.5em;
     }
-    
+
     .performances p {
        margin: 0;
     }
 
     .performances li {
         margin: 2em 0;
+    }
+    
+    .performances h2 {
+        text-decoration: underline;
+        font-size: 1.6em;
+    }
+
+    .performances p, .performances a {
+        font-size: 0.9em;
     }
 
     .song-title {
@@ -52,7 +61,12 @@
     }
 
     .songs {
-        font-size: 2em;
+        font-size: 1.6em;
+        margin-bottom: 2em;
+    }
+
+    .songs li {
+        margin-bottom: 1.3em;
     }
 
     .controls {
@@ -65,6 +79,11 @@
         display: block;
     }
 
+    .play-pause-btn svg {
+        width: 13.5;
+        height: 18;
+    }
+
     .slider {
         width: 100%;
         position: relative;
@@ -73,13 +92,14 @@
 
     .progress {
         position: relative;
+        height: 0.8rem;
         z-index: 2;
     }
 
     .slider:after {
         content: "";
         background-color: #566574;
-        height: 1rem;
+        height: 0.8rem;
         width: 100%;
         position: absolute;
         bottom: 0;
