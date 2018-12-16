@@ -111,12 +111,39 @@
 
 @media (min-width: 767px) {
 
+    body {
+        background-size: 150%;
+    }
+
+    h1 {
+        font-size: 7em;
+    }
+
+    .song-title {
+        font-size: 1em;
+    }
+
+    .performances {
+        font-size: 1.3em;
+    }
+
 }
 
 @media (min-width: 991px) {
 
+
+
 }
 
 @media (min-width: 1199px) {
+
+    body {
+        background-size: 100%;
+        min-height: 1000px;
+    }
+
+    h1 {
+        font-size: 7em;
+    }
 
 }
