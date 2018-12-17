@@ -28,19 +28,20 @@
 
                 <div class="songs">
 
-                    <!--<h3>Songs</h3>-->
-
                     <ol>
                         {% for song in songs_to_display %}
-                            {% include "music/music-player.html" with song_url=song.song_file.url song_title=song.title only %}
+                            <li>
+                                <p>{{ song.title }}</p>
+                                <audio controls controlsList="nodownload">
+                                    <source src="{{ song.song_file.url }}" type="audio/mp3">
+                                </audio>
+                            </li>
                         {% endfor %}
                     </ol>
 
                 </div>
 
                 <div class="performances">
-
-                    <!--<h3>Performances</h3>-->
 
                     <ol>
                         {% for performance in performances_to_display %}
