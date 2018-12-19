@@ -107,6 +107,14 @@
         border-radius: 0.25rem;
     }
 
+    .songs ol {
+        display: block;
+    }
+
+    audio {
+        width: 100%;
+    }
+
 }
 
 @media (min-width: 767px) {
@@ -139,7 +147,6 @@
 
     body {
         background-size: 100%;
-        min-height: 1000px;
     }
 
     h1 {
