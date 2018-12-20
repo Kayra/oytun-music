@@ -69,44 +69,6 @@
         margin-bottom: 1.3em;
     }
 
-    .controls {
-        display: flex;
-        align-items: center;
-    }
-
-    .play-pause-btn {
-        margin: 0 10px;
-        display: block;
-    }
-
-    .play-pause-btn svg {
-        width: 13.5;
-        height: 18;
-    }
-
-    .slider {
-        width: 100%;
-        position: relative;
-        margin: 0 10px;
-    }
-
-    .progress {
-        position: relative;
-        height: 0.8rem;
-        z-index: 2;
-    }
-
-    .slider:after {
-        content: "";
-        background-color: #566574;
-        height: 0.8rem;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        z-index: 1;
-        border-radius: 0.25rem;
-    }
-
     .songs ol {
         display: block;
     }
