@@ -25,7 +25,7 @@ SECRET_KEY = 'mkizcgwp67s#ny4x(^z30s6*3$t&v&g2jfh67+u^$3w!0(j(tg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['oytun-music-test.eu-west-2.elasticbeanstalk.com']
 
 
 # Application definition
