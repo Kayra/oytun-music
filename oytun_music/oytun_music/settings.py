@@ -28,7 +28,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['oytun-music-test.eu-west-2.elasticbeanstalk.com',
                  'oytun-music.eu-west-2.elasticbeanstalk.com',
-                 'oytun.co.uk']
+                 'oytun.co.uk',
+                 'www.oytun.co.uk']
+
 if settings.DEBUG:
     ALLOWED_HOSTS.append('127.0.0.1')
 
