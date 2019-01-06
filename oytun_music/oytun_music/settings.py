@@ -147,7 +147,7 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads/')
 MEDIA_URL = os.path.join(BASE_DIR, 'uploads/')
 
-if not settings.DEBUG:
+if os.environ['S3_BUCKET_NAME']:
     # Third party module: boto
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
