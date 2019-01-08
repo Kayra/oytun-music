@@ -51,7 +51,3 @@ psql -h localhost -d oytun_music -U oytun_music -p 5432
 ```bash
 python oytun_music/manage.py sqlmigrate music 0001
 ```
-
-## Todo
-
-Change how static and media files are handled for [production](https://docs.djangoproject.com/en/2.1/howto/static-files/), [here too](https://timmyomahony.com/blog/static-vs-media-and-root-vs-path-in-django/)
