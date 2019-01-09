@@ -39,6 +39,18 @@ The psql database is named `oytun_music` and will be accessible with the followi
 
 ## Useful commands
 
+### Create developer database and user
+
+```bash
+. scripts/create_dev_db.sh
+```
+
+### Seed database
+
+```bash
+. scripts/seed_db.sh
+```
+
 #### Connect to the database
 
 ```bash
