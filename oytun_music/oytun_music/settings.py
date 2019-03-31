@@ -34,7 +34,6 @@ ALLOWED_HOSTS = ['oytun-music-test.eu-west-2.elasticbeanstalk.com',
 if settings.DEBUG:
     ALLOWED_HOSTS.append('127.0.0.1')
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -44,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ebhealthcheck.apps.EBHealthCheckConfig',
     'music.apps.MusicConfig',
     'storages',
 ]
