@@ -1,5 +1,9 @@
 # Oytun Music
 
+This is a site created to host the songs and display details of live events for the artist Oytun.
+
+![Example Screenshot](example_screenshot.png)
+
 ## Set up development environment
 
 ### Requirements
