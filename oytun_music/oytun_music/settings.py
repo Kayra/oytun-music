@@ -147,13 +147,12 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads/')
 MEDIA_URL = os.path.join(BASE_DIR, 'uploads/')
 
-if os.environ['S3_BUCKET_NAME']:
+if os.getenv('S3_BUCKET_NAME'):
     # Third party module: boto
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-
 
     # Third party module: django-storages
     AWS_STORAGE_BUCKET_NAME = os.environ['S3_BUCKET_NAME']
