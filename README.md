@@ -41,6 +41,12 @@ The psql database is named `oytun_music` and will be accessible with the followi
 * Username = `oytun_music`
 * Password = `development_password_only`
 
+## Model Migration Flow
+
+1. Create or update a model
+2. Run `./manage.py makemigrations music`
+3. Run `./manage.py migrate music`
+
 ## Useful commands
 
 ### Create developer database and user
@@ -67,3 +73,10 @@ psql -h localhost -d oytun_music -U oytun_music -p 5432
 ```bash
 python oytun_music/manage.py sqlmigrate music 0001
 ```
+
+#### Show all migrations
+
+```bash
+python oytun_music/manage.py showmigrations
+```
+
