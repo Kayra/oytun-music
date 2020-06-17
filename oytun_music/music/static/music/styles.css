@@ -34,6 +34,22 @@
         text-decoration: underline;
     }
 
+    .bio {
+        margin-top: 5em;
+    }
+
+    .bio img {
+        max-width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bio .text {
+        font-size: 1em;
+        margin: 2em 1em 0 1em;
+    }
+
     .performances {
         margin-bottom: 2.5em;
     }
@@ -89,6 +105,14 @@
         font-size: 7em;
     }
 
+    .bio img {
+        max-width: 70%;
+    }
+
+    .bio .text {
+        font-size: 1.1em;
+    }
+
     .song-title {
         font-size: 1em;
     }
@@ -101,7 +125,13 @@
 
 @media (min-width: 991px) {
 
+    .bio img {
+        max-width: 80%;
+    }
 
+    .bio .text {
+        font-size: 1.2em;
+    }
 
 }
 
@@ -113,6 +143,31 @@
 
     h1 {
         font-size: 7em;
+    }
+
+    .bio {
+        margin-top: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bio .image {
+        flex-basis: 200%;
+    }
+
+    .bio img {
+        max-width: 100%
+    }
+
+    .bio .text {
+        font-size: 1.4em;
+        padding-left: 1em;
+        margin: 0;
+    }
+
+    main {
+        clear: both;
     }
 
 }
