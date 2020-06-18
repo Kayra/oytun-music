@@ -21,13 +21,19 @@
 
             <header>
                 <h1>{{ site_title }}</h1>
-                <!--<h2>{{ about_me }}</h2>-->
+                <div class="bio">
+                    <div class="image">
+                        <img src="{% static 'music/profile_picture.jpg' %}">
+                    </div>
+                    <div class="text">
+                        <p>{{ about_me }}</p>
+                    </div>
+                </div>
             </header>
 
             <main>
 
                 <div class="songs">
-
                     <ol>
                         {% for song in songs_to_display %}
                             <li>
@@ -38,11 +44,9 @@
                             </li>
                         {% endfor %}
                     </ol>
-
                 </div>
 
                 <div class="performances">
-
                     <ol>
                         {% for performance in performances_to_display %}
                         <li>
@@ -52,7 +56,6 @@
                         </li>
                         {% endfor %}
                     </ol>
-
                 </div>
 
             </main>
