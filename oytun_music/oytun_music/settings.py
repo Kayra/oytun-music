@@ -160,21 +160,5 @@ if os.getenv('S3_BUCKET_NAME'):
     AWS_ACCESS_KEY_ID = os.environ['S3_ACCESS_ID']
     AWS_SECRET_ACCESS_KEY = os.environ['S3_ACCESS_SECRET']
 
-    AWS_DEFAULT_ACL = None
-
-    # Tell django-storages the domain to use to refer to static files.
-    AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-
-    # Tell the staticfiles app to use S3Boto3 storage when writing the collected static files (when
-    # you run `collectstatic`).
-
-    STATICFILES_LOCATION = 'static'
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-
-    MEDIAFILES_LOCATION = 'media'
-    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-
-    STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'music/static'),
-    ]
-    STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
+    STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
